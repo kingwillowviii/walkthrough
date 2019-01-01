@@ -37,4 +37,9 @@ ehthumbs.db
 
 # IDEs #
 ############
-.editorconfig
+*.editorconfig
+
+# Specific #
+############
+dist
+node_modules

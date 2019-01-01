@@ -9,6 +9,6 @@ const concat = require('concat');
     './dist/walkthrough/main.js'
   ];
 
-  await fs.ensureDir('walkthrough');
+  await fs.ensureDir('public');
   await concat(files, 'public/shared-ui-plugin-walkthrough.js');
 })();
