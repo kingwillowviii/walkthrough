@@ -1,0 +1,242 @@
+/**
+** TOP LEVEL 
+**/
+.wt-t {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block; 
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";  
+}
+
+/**
+** GUTTER 
+**/
+.wt-t p, .wt-t .wt-t-gutter {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.wt-t .wt-t-gutter-no-title .wt-t-gutter {
+  margin-top:0px;
+}
+
+/**
+** OVERLAY 
+**/
+.wt-t-overlay {
+  display:block;
+  position:absolute;
+  z-index: 998;
+}
+.wt-t .wt-t-overlay:after {
+  content: '';
+  position: absolute;
+  border-color: #69b5e4;
+  border-style: solid;
+  box-shadow: 0px 0px 0px 99999px rgba(0,0,0,.75);
+  top: var(--wt-t-overlay-top, 0px);
+  left: var(--wt-t-overlay-left, 0px);
+  width: var(--wt-t-overlay-width, 0px);
+  height: var(--wt-t-overlay-height, 0px);
+  border-radius: var(--wt-t-overlay-border-radius, 0%);
+  padding: var(--wt-t-overlay-padding, 0px);  
+  border-width: var(--wt-t-overlay-border-width, 0px);  
+}
+.wt-t-overlay-logo {
+  position: absolute;
+  bottom: -30px;
+  left: -66px;
+  opacity: 0.5;  
+}
+
+/**
+** STEP 
+**/
+.wt-t-intro {
+  position: fixed; 
+  left: 0; 
+  right: 0; 
+  max-width: 500px; /* Need a specific value to work */
+  z-index: 999;
+  margin: 1.75rem 1rem;
+  top: -90px;
+}
+.wt-t-intro .wt-t-intro-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+}
+.wt-t-intro .wt-t-intro-header .wt-t-intro-header-logo {
+  position: relative;
+  top:72px;
+}
+.wt-t-intro .wt-t-intro-header .wt-t-intro-header-logo svg {
+  width:125px;
+}
+.wt-t-intro .wt-t-intro-content {
+  border-radius: .3rem;
+  background-color: #f1f1f1;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  outline: 0;
+  padding:80px 25px 25px;
+  box-shadow: inset 0px 0px 0px 10px #69b5e4;
+  box-sizing: border-box;
+}
+@media (min-width: 580px) {
+  .wt-t-intro {
+    margin: 1.75rem auto;
+  }
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-title {
+   margin: 0 0 15px 0;
+   font-size: 1.5rem;
+   text-align: center;
+   font-weight: 400;
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-content {
+  font-weight: 200;
+  font-size:0.9rem;
+  line-height: 1.2rem;
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-navigation {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0px;
+  flex-direction: column;
+  text-align: center;
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-navigation .wt-t-intro-content-navigation-start button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-navigation .wt-t-intro-content-navigation-start button.start {
+  border: 1px solid rgb(20, 97, 147);
+}
+.wt-t-intro .wt-t-intro-content .wt-t-intro-content-navigation .wt-t-intro-content-navigation-close {
+  font-size: 0.8rem;
+  margin-top: 10px;  
+}
+
+.wt-t-intro .wt-t-intro-footer {
+  font-size: 0.8rem;
+  color:#fff;
+  text-align: center;
+  margin-top:2px;
+}
+.wt-t-intro .wt-t-intro-footer a.wt-t-intro-footer-icon-link {
+  color:#fff;
+}
+
+/**
+** STEP 
+**/
+.wt-t-step {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  max-width: 500px; /* Need a specific value to work */
+  z-index: 999;
+  margin: 1rem;
+  top: var(--wt-t-step-top, 0px);
+  left: var(--wt-t-step-left, 0px);
+}
+.wt-t-step .wt-t-step-header {
+  display: flex;
+}
+.wt-t-step .wt-t-step-content {
+  border-radius: .3rem;
+  background-color: #f1f1f1;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  outline: 0;
+  padding:25px 25px 25px;
+  box-shadow: inset 0px 0px 0px 10px #69b5e4;
+  box-sizing: border-box;
+}
+.wt-t-step .wt-t-step-content .wt-t-step-content-title {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.wt-t-step .wt-t-step-content .wt-t-step-content-content {
+  font-weight: 200;
+  font-size:0.8rem;
+  line-height: 1.2rem;
+}
+.wt-t-step .wt-t-step-content .wt-t-step-content-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.wt-t-step .wt-t-step-content .wt-t-step-content-navigation .wt-t-step-content-navigation-previous button,
+.wt-t-step .wt-t-step-content .wt-t-step-content-navigation .wt-t-step-content-navigation-next button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+.wt-t-step .wt-t-step-content .wt-t-step-content-navigation .wt-t-step-content-navigation-previous button.previous,
+.wt-t-step .wt-t-step-content .wt-t-step-content-navigation .wt-t-step-content-navigation-next button.next {
+  border: 1px solid rgb(20, 97, 147);
+}
+.wt-t-step-content-navigation-close {
+  font-size: 0.8rem;
+  margin-top: 10px;  
+  text-align: center;  
+}
+.wt-t-step .wt-t-step-footer {
+  font-size: 0.8rem;
+  color:#fff;
+  text-align: center;
+  margin-top:2px;
+}
+.wt-t-step .wt-t-step-footer a.wt-t-step-footer-icon-link {
+  color:#fff;
+}
+
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}

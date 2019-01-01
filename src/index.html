@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elems</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body style="padding: 0 10vw">
+
+    <span id="ffirst">My Angular Elements Powered Blog ⚡</span>
+    
+    <walkthrough-tutorial id="first"></walkthrough-tutorial>   
+    <script defer="defer">
+      setTimeout(function() {
+        document.getElementById('first').configuration = { 
+          intro: { 
+            title: "My first tutorial",
+            content: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula.</p><div class='video-container'><iframe src='https://www.youtube-nocookie.com/embed/fsVL_xrYO0w' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>",
+            startButtonText: "Start me ;-)",
+            cancelButtonText: "Im not in to this"
+          },
+          steps: [
+            {
+              selector: "#ffirst",
+              cancelButtonText: "I'd done, close",
+              content: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula."
+            },
+            {
+              selector: "#second",
+              title: "Step 2",
+              content: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula.<br><br><div class='video-container'><iframe src='https://www.youtube-nocookie.com/embed/fsVL_xrYO0w' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+            },
+            {
+              selector: "#dodgy",
+              title: "Step dodgy",
+              content: "dodgy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula.<br><br><div class='video-container'><iframe src='https://www.youtube-nocookie.com/embed/fsVL_xrYO0w' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+            },            
+            {
+              selector: "#third",
+              title: "Step 3",
+              content: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula.<br><br><div class='video-container'><iframe src='https://www.youtube-nocookie.com/embed/fsVL_xrYO0w' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+            },
+            {
+              selector: "#forth",
+              title: "Step 4",
+              content: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula."
+            },
+            {
+              title: "Step 5",
+              content: "5 nada Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor tellus. Etiam sit amet tempus ligula."
+            }                
+          ]
+        };
+        document.getElementById('first').activate();
+      }, 250)
+    </script>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa <strong id="second">strong</strong>.
+    </p>
+
+    <p>
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+      quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+      vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+      <a class="external ext" href="#">link</a> mollis pretium. Integer
+      tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+      eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+      a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+      rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+      ullamcorper ultricies nisi.
+    </p>
+
+    <p id="forth">
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+      quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+      vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+      <a class="external ext" href="#">link</a> mollis pretium. Integer
+      tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+      eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+      a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+      rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+      ullamcorper ultricies nisi.
+    </p>
+    <p>
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+        vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+        <a class="external ext" href="#">link</a> mollis pretium. Integer
+        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+        a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+        rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+        ullamcorper ultricies nisi.
+      </p>
+      <p>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+          quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+          vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a class="external ext" href="#">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+          eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+          eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+          a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+          rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+          ullamcorper ultricies nisi.
+        </p>
+        <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            <a class="external ext" href="#">link</a> mollis pretium. Integer
+            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+            eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+            eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+            a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+            rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+            ullamcorper ultricies nisi.
+          </p>
+          <p>
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+              quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              <a class="external ext" href="#">link</a> mollis pretium. Integer
+              tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+              eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+              eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+              a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+              rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+              ullamcorper ultricies nisi.
+            </p>
+            <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                <a class="external ext" href="#">link</a> mollis pretium. Integer
+                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+                a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                ullamcorper ultricies nisi.
+              </p>
+    <p>
+      ct magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+      ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+      quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+      arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+      Nullam dictum felis eu pede
+      <a class="external ext" href="#" id="third">link</a> mollis pretium. Integer
+      tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+      eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+      a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+      rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+      ullamcorper ultricies nisi.
+    </p>
+  </body>
+</html>
